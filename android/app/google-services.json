@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "632920281482",
+    "project_id": "twitterpoc-2fdd5",
+    "storage_bucket": "twitterpoc-2fdd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632920281482:android:9a0c732050a64c6bdd3873",
+        "android_client_info": {
+          "package_name": "com.example.flweeter_poc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632920281482-pf4lf9o75b4s8s257atmofdcumdklb0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzc1YO_wB5tlEu-CFvMzn1M03aqSo7lo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632920281482-pf4lf9o75b4s8s257atmofdcumdklb0b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "632920281482-tu74j81jaobg2h8bjkb6muttsmu4gsm9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flweeterPoc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
