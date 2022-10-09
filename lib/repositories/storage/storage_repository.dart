@@ -4,10 +4,10 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:twizzter/repositories/repositories.dart';
 import 'package:uuid/uuid.dart';
 
-class StorageRepository extends BaseStorageRepository {
+class StorageRepositoryPic extends BaseStorageRepository {
   final FirebaseStorage _firebaseStorage;
 
-  StorageRepository({FirebaseStorage? firebaseStorage})
+  StorageRepositoryPic({FirebaseStorage? firebaseStorage})
       : _firebaseStorage = firebaseStorage ?? FirebaseStorage.instance;
 
   Future<String> _uploadImage({
