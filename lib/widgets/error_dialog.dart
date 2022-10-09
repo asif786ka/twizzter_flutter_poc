@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class ErrorDialog extends StatelessWidget {
@@ -15,7 +16,12 @@ class ErrorDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Platform.isIOS ? _showIOSDialog(context) : _showAndroidDialog(context);
+    if (kIsWeb) {
+      return _showAndroidDialog(context);
+    } else if (Platform.isAndroid || Platform.isIOS) {
+      return Platform.isIOS ? _showIOSDialog(context) : _showAndroidDialog(context);
+    }
+    return _showAndroidDialog(context);
   }
 
   CupertinoAlertDialog _showIOSDialog(BuildContext context) {
