@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twizzter/screens/screens.dart';
 
 class ProfileButton extends StatelessWidget {
   final bool isCurrentUser;
@@ -14,7 +15,10 @@ class ProfileButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return isCurrentUser
         ? TextButton(
-            onPressed: () {},
+            onPressed: () => Navigator.of(context).pushNamed(
+              EditProfileScreen.routeName,
+              arguments: EditProfileScreenArgs(context: context),
+            ),
             style: TextButton.styleFrom(
                 foregroundColor: Theme.of(context).primaryColor,
                 backgroundColor: Colors.amber,
